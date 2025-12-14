@@ -54,7 +54,7 @@ After installation, open **Anaconda Prompt** or terminal and verify:
 
 conda --version
 
-**Creating the anaconda environment.**
+**Creating the anaconda environment (Put the command in cmd prompt)**
 
 conda create -n <put_your_env_name> python=3.11
 
@@ -166,6 +166,7 @@ The system generates:
 ▶️ Audio playback & download options
 
 📁 Project Structure
+
 
 
 
