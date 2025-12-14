@@ -178,11 +178,8 @@ The system generates:
 ├── modules/               # Modularized model & pipeline components
 ├── nltk_data/             # NLTK resources required for text processing
 ├── presets/               # Predefined configuration presets
-├── pretrained_models/     # Pretrained checkpoints and weights
 ├── prompts/               # Prompt templates for inference
-├── utils/                 # Utility functions and helpers
-├── whisper/               # Whisper-based speech-to-text components (auto-generated)
-│
+├── utils/                 # Utility functions and helpers              
 ├── descriptions.py        # Model / feature descriptions
 ├── examples.py            # Example usage scripts
 ├── launch-ui.py           # Main entry point to launch UI & inference
@@ -190,3 +187,4 @@ The system generates:
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
+
