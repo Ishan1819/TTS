@@ -167,8 +167,10 @@ The system generates:
 
 ▶️ Audio playback & download options
 
+
 ### **📁 Project Structure**
 
+```text
 ├── customs/               # Custom user-defined components & overrides
 ├── data/                  # Dataset files and intermediate data
 ├── images/                # Images used for UI / documentation
@@ -187,11 +189,4 @@ The system generates:
 ├── macros.py              # Global macros and constants
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
-
-
-
-
-
-
-
-
+```
