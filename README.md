@@ -27,31 +27,42 @@ The system delivers **high-quality voice cloning** with strong **speaker identit
 
 ### 📥 **1. Clone the Repository**
 
-```bash
+
 git clone <your_repo_url_here>
 cd <your_repo_name>
-🐍 2. Python Requirements
+
+### 🐍 **2. Python Requirements**
+
+
 Python Version: 3.11
 
 Recommended: Anaconda / Miniconda
 
-📦 3. Create & Activate Conda Environment
-bash
-Copy code
+### 📦 **3. Create & Activate Conda Environment**
+
+
 conda create -n <put_your_env_name> python=3.11
+
 conda activate <put_your_env_name>
+
 📌 Example:
 
-bash
-Copy code
 conda create -n valle-env python=3.11
+
 conda activate valle-env
-🎵 4. Install FFmpeg (Required)
+
+
+### 🎵 **4. Install FFmpeg (Required for recording of audio)**
+
 FFmpeg is required for audio processing and format handling.
 
 🪟 Windows
+
 Download from:
+
 👉 https://www.gyan.dev/ffmpeg/builds/
+
+ffmpeg-2025-12-07-git-c4d22f2d2c-full_build.7z
 
 After downloading:
 
@@ -60,45 +71,42 @@ Extract the archive
 Add the bin/ folder to your System PATH
 
 🍎 macOS
-bash
-Copy code
+
 brew install ffmpeg
+
 🐧 Linux
-bash
-Copy code
+
 sudo apt update
+
 sudo apt install ffmpeg
+
 ✅ Verify installation:
 
-bash
-Copy code
 ffmpeg -version
-📥 5. Install Python Dependencies
+
+
+### 📥 **5. Install Python Dependencies**
+
 Make sure your environment is activated, then run:
 
-bash
-Copy code
 pip install -r requirements.txt
-▶️ 6. Running the Model
+
+### ▶️ **6. Running the Model**
+
 Example inference command:
 
-bash
-Copy code
-python infer.py \
-  --text "Hello, this is a VALL-E-X voice cloning demo." \
-  --audio_prompt samples/reference.wav
-📌 Replace arguments based on your actual script structure.
+python launch-ui.py
 
 🎙️ Input Audio Requirements
-Supported formats: .wav, .mp3
 
-Recommended sample rate: 24 kHz
+Supported formats: .wav, .mp3
 
 Mono channel preferred
 
-2–5 seconds of clean reference speech works best
+6-10 seconds of clean reference speech works best
 
 📤 Output
+
 The system generates:
 
 🔊 Synthesized speech (.wav)
@@ -110,3 +118,4 @@ The system generates:
 ▶️ Audio playback & download options
 
 📁 Project Structure
+
