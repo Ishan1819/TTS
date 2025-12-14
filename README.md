@@ -5,7 +5,7 @@
 
 ## 🌟 **Project Overview**
 
-> 🚀 This project is built on top of an **unofficial Microsoft-released implementation of VALL-E-X**, enhanced with **additional features, quality improvements, and evaluation metrics**.
+**> 🚀 This project is built on top of an **unofficial Microsoft-released implementation of VALL-E-X**, enhanced with **additional features, quality improvements, and evaluation metrics**.**
 
 The system delivers **high-quality voice cloning** with strong **speaker identity preservation** and **word-level accuracy**, making it suitable for advanced **text-to-speech research and experimentation**.
 
@@ -165,5 +165,6 @@ The system generates:
 ▶️ Audio playback & download options
 
 📁 Project Structure
+
 
 
