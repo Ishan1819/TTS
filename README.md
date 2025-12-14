@@ -179,7 +179,7 @@ The system generates:
 ├── pretrained_models/     # Pretrained checkpoints and weights
 ├── prompts/               # Prompt templates for inference
 ├── utils/                 # Utility functions and helpers
-├── whisper/               # Whisper-based speech-to-text components (auto generated)
+├── whisper/               # Whisper-based speech-to-text components (auto-generated)
 │
 ├── descriptions.py        # Model / feature descriptions
 ├── examples.py            # Example usage scripts
@@ -187,6 +187,9 @@ The system generates:
 ├── macros.py              # Global macros and constants
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
+
+
+
 
 
 
