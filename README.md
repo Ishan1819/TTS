@@ -38,8 +38,22 @@ Python Version: 3.11
 
 Recommended: Anaconda / Miniconda
 
-### 📦 **3. Create & Activate Conda Environment**
+## 📦 **3. Create & Activate Conda Environment (Recommended)**
 
+### Install Anaconda (If Not Installed)
+
+Download Anaconda from:  
+👉 https://www.anaconda.com/products/distribution
+
+During installation:
+- ✅ **Check**: *Add Anaconda to PATH*
+- ✅ **Check**: *Register Anaconda as default Python*
+
+After installation, open **Anaconda Prompt** or terminal and verify:
+
+conda --version
+
+**Creating the anaconda environment.**
 
 conda create -n <put_your_env_name> python=3.11
 
@@ -51,6 +65,39 @@ conda create -n valle-env python=3.11
 
 conda activate valle-env
 
+**OR**
+
+**🧪 Alternative: Python Virtual Environment (venv)**
+
+If you do not want to use Conda, you can use Python’s built-in virtual environment.
+
+🔹 Step 1: Ensure Python 3.11 is Installed
+
+python --version
+
+If not installed, download from:
+
+👉 https://www.python.org/downloads/
+
+⚠️ Make sure Python is added to PATH during installation
+
+🔹 Step 2: Create Virtual Environment
+
+python -m venv venv
+
+🔹 Step 3: Activate Virtual Environment
+
+Windows
+
+venv\Scripts\activate
+
+
+macOS / Linux
+
+source venv/bin/activate
+
+
+✅ After activation, you should see (venv) in your terminal.
 
 ### 🎵 **4. Install FFmpeg (Required for recording of audio)**
 
@@ -118,4 +165,5 @@ The system generates:
 ▶️ Audio playback & download options
 
 📁 Project Structure
+
 
