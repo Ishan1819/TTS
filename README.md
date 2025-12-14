@@ -19,7 +19,6 @@ The system delivers **high-quality voice cloning** with strong **speaker identit
 - 🎵 Supports **`.wav` and `.mp3`** input audio formats  
 - ⚡ Optimized inference pipeline for cleaner and more stable outputs  
 
-> ⚠️ This repository is intended for **research, experimentation, and educational purposes only**.
 
 ---
 
@@ -187,4 +186,5 @@ The system generates:
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
+
 
