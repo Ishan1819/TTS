@@ -141,9 +141,10 @@ pip install -r requirements.txt
 
 ### ▶️ **6. Running the Model**
 
-Example inference command:
+**RUN**
 
 python launch-ui.py
+
 
 🎙️ Input Audio Requirements
 
@@ -152,6 +153,7 @@ Supported formats: .wav, .mp3
 Mono channel preferred
 
 6-10 seconds of clean reference speech works best
+
 
 📤 Output
 
@@ -165,7 +167,26 @@ The system generates:
 
 ▶️ Audio playback & download options
 
-📁 Project Structure
+### **📁 Project Structure**
+
+├── customs/               # Custom user-defined components & overrides
+├── data/                  # Dataset files and intermediate data
+├── images/                # Images used for UI / documentation
+├── models/                # Core model architectures
+├── modules/               # Modularized model & pipeline components
+├── nltk_data/             # NLTK resources required for text processing
+├── presets/               # Predefined configuration presets
+├── pretrained_models/     # Pretrained checkpoints and weights
+├── prompts/               # Prompt templates for inference
+├── utils/                 # Utility functions and helpers
+├── whisper/               # Whisper-based speech-to-text components (auto generated)
+│
+├── descriptions.py        # Model / feature descriptions
+├── examples.py            # Example usage scripts
+├── launch-ui.py           # Main entry point to launch UI & inference
+├── macros.py              # Global macros and constants
+├── requirements.txt       # Python dependencies
+└── README.md              # Project documentation
 
 
 
