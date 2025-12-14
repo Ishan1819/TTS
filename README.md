@@ -29,6 +29,7 @@ The system delivers **high-quality voice cloning** with strong **speaker identit
 
 
 git clone <your_repo_url_here>
+
 cd <your_repo_name>
 
 ### 🐍 **2. Python Requirements**
@@ -165,6 +166,7 @@ The system generates:
 ▶️ Audio playback & download options
 
 📁 Project Structure
+
 
 
 
