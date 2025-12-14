@@ -1,80 +1,112 @@
-VALL-E X – Voice Cloning & TTS System
+# 🎙️ VALL-E-X Voice Cloning System  
+### _High-Fidelity Neural Text-to-Speech with Advanced Speaker Similarity_
 
-This repository contains an implementation of VALL-E, a neural codec–based text-to-speech system that generates speech conditioned on a short audio prompt.
-A high-quality voice cloning and text-to-speech (TTS) system built with VALL-E architecture, enhanced with additional validation, accuracy metrics, and improved robustness.
+---
 
-🚀 Features Added (Custom Enhancements)
-✔ 1. Input Character Length Limiter
+## 🌟 **Project Overview**
 
-Prevents the user from entering overly long text that may break TTS or produce unstable output.
-System automatically validates input length before generating audio.
+> 🚀 This project is built on top of an **unofficial Microsoft-released implementation of VALL-E-X**, enhanced with **additional features, quality improvements, and evaluation metrics**.
 
-✔ 2. TTS Accuracy Metric
+The system delivers **high-quality voice cloning** with strong **speaker identity preservation** and **word-level accuracy**, making it suitable for advanced **text-to-speech research and experimentation**.
 
-A custom metric that evaluates the quality of generated speech compared to model expectations.
+### ✨ **Key Highlights**
 
-✔ 3. Voice-Cloning Accuracy Score
+- 🧠 **Better voice cloning quality** with improved speaker similarity  
+- 🎯 **High word-level accuracy metrics** for speech evaluation  
+- 🗣️ **Speaker diarization** support  
+- 🔍 **Audio validation & vocal similarity analysis**  
+- ▶️ **Play & download options** for generated audio output  
+- 🎵 Supports **`.wav` and `.mp3`** input audio formats  
+- ⚡ Optimized inference pipeline for cleaner and more stable outputs  
 
-Measures similarity between cloned voice and original reference using audio embeddings.
+> ⚠️ This repository is intended for **research, experimentation, and educational purposes only**.
 
-✔ 4. Multi-Voice Detection Safety Check
+---
 
-If more than 2 voices are detected in the reference audio, the model raises an error:
+## 🔧 **Installation & Setup**
 
-❌ "Multiple speakers detected. Please upload clean single-speaker audio."
+### 📥 **1. Clone the Repository**
 
-This ensures clean, high-accuracy cloning.
-🔧 Setup Instructions
-1. Clone the Repository
+```bash
 git clone <your_repo_url_here>
 cd <your_repo_name>
+🐍 2. Python Requirements
+Python Version: 3.11
 
-
-Replace the URL with your actual GitHub repository link.
-
-🐍 2. Python Version
-
-This project requires:
-
-Python 3.11
-
-
-Make sure you have Anaconda installed (recommended).
+Recommended: Anaconda / Miniconda
 
 📦 3. Create & Activate Conda Environment
-conda create -n <your_env_name> python=3.11
-conda activate <your_env_name>
+bash
+Copy code
+conda create -n <put_your_env_name> python=3.11
+conda activate <put_your_env_name>
+📌 Example:
 
+bash
+Copy code
+conda create -n valle-env python=3.11
+conda activate valle-env
+🎵 4. Install FFmpeg (Required)
+FFmpeg is required for audio processing and format handling.
 
-Replace <your_env_name> with your desired environment name (example: valle-env).
-
-🎵 4. Install FFmpeg
-
-FFmpeg is required for handling audio files.
-
-Windows
-
+🪟 Windows
 Download from:
-https://www.gyan.dev/ffmpeg/builds/
+👉 https://www.gyan.dev/ffmpeg/builds/
 
-Add FFmpeg's bin/ folder to your system PATH.
+After downloading:
 
-macOS
+Extract the archive
+
+Add the bin/ folder to your System PATH
+
+🍎 macOS
+bash
+Copy code
 brew install ffmpeg
-
-Linux
+🐧 Linux
+bash
+Copy code
 sudo apt update
 sudo apt install ffmpeg
+✅ Verify installation:
 
-
-To verify installation:
-
+bash
+Copy code
 ffmpeg -version
+📥 5. Install Python Dependencies
+Make sure your environment is activated, then run:
 
-📥 5. Install Dependencies
-
-After activating your environment, run:
-
+bash
+Copy code
 pip install -r requirements.txt
+▶️ 6. Running the Model
+Example inference command:
 
+bash
+Copy code
+python infer.py \
+  --text "Hello, this is a VALL-E-X voice cloning demo." \
+  --audio_prompt samples/reference.wav
+📌 Replace arguments based on your actual script structure.
 
+🎙️ Input Audio Requirements
+Supported formats: .wav, .mp3
+
+Recommended sample rate: 24 kHz
+
+Mono channel preferred
+
+2–5 seconds of clean reference speech works best
+
+📤 Output
+The system generates:
+
+🔊 Synthesized speech (.wav)
+
+📊 Word accuracy metrics
+
+🧠 Speaker similarity scores
+
+▶️ Audio playback & download options
+
+📁 Project Structure
