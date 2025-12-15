@@ -151,8 +151,9 @@ Supported formats: .wav, .mp3
 
 Mono channel preferred
 
-6-10 seconds of clean reference speech works best
+6-10 seconds of clean reference audio works best
 
+500 - 600 characters text works best
 
 📤 Output
 
@@ -166,6 +167,16 @@ The system generates:
 
 ▶️ Audio playback & download options
 
+
+## ⚠️ Troubleshooting & Notes
+
+> **Note:** If the system encounters an unknown or transient error, restarting the system is recommended, as it often resolves the issue.
+
+- Ensure FFmpeg is correctly installed and added to PATH  
+- Make sure the correct Conda / virtual environment is activated  
+- Close and relaunch the UI if audio playback fails  
+- Restart the system before deeper debugging if unexpected errors occur
+  
 
 ### **📁 Project Structure**
 
@@ -186,6 +197,5 @@ The system generates:
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
-
 
 
